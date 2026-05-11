@@ -36,6 +36,6 @@ namespace Lojinha.Modelos
             set { _telefone = value; }
         }
            
-
+               
     }
 }
