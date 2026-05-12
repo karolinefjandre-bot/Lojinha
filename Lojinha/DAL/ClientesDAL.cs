@@ -32,11 +32,11 @@ namespace Lojinha.DAL
 				cmd.Parameters.Add(pnome);
 
 				SqlParameter pemail = new SqlParameter("@email", System.Data.SqlDbType.VarChar, 100);
-				pnome.Value = cliente.Email;
+				pemail.Value = cliente.Email;
 				cmd.Parameters.Add(pemail);
 
 				SqlParameter ptelefone = new SqlParameter("@telefone", System.Data.SqlDbType.VarChar, 20);
-				pnome.Value = cliente.Telefone;
+				ptelefone.Value = cliente.Telefone;
 				cmd.Parameters.Add(ptelefone);
 
 				cn.Open();
@@ -80,11 +80,11 @@ namespace Lojinha.DAL
 				cmd.Parameters.Add(pnome);
 
 				SqlParameter pemail = new SqlParameter("@email", System.Data.SqlDbType.VarChar, 100);
-				pnome.Value = cliente.Email;
+				pemail.Value = cliente.Email;
 				cmd.Parameters.Add(pemail);
 
 				SqlParameter ptelefone = new SqlParameter("@telefone", System.Data.SqlDbType.VarChar, 20);
-				pnome.Value = cliente.Telefone;
+				ptelefone.Value = cliente.Telefone;
 				cmd.Parameters.Add(ptelefone);
 
 				cn.Open();

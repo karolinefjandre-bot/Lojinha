@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lojinha.Modelos
 {
-    internal class VendasInformation
+    public class VendasInformation
     {
         private int _codigo;
         public int Codigo
