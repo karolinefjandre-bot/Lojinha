@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Lojinha.Modelos.ClienteInformation">
-    <Position X="11" Y="2" Width="1.5" />
+    <Position X="5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAgSAQAAAAAAAAAAAAAAgAAAAAAAAAAAEAAAE=</HashCode>
       <FileName>Modelos\ClienteInformation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lojinha.Modelos.ProdutoInformation">
-    <Position X="7.5" Y="2" Width="1.5" />
+    <Position X="2.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAIAAgAQAQAAAAAAAAAAAAAAAAAAAAACAEAAEAAAA=</HashCode>
       <FileName>Modelos\ProdutoInformation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lojinha.Modelos.VendasInformation">
-    <Position X="4.5" Y="2" Width="1.5" />
+    <Position X="0.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAACAAAABQAQQQAAAAIAAAAAAAAAABAACAAQAAAAAAA=</HashCode>
       <FileName>Modelos\VendasInformation.cs</FileName>
