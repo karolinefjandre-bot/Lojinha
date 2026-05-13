@@ -19,23 +19,23 @@ namespace Lojinha.DAL
                 {
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = cn;
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "insere_produto";
 
                     //Parametros da Stored Procedure
-                    SqlParameter pcodigo = new SqlParameter("@codigo", System.Data.SqlDbType.Int);
-                    pcodigo.Direction = System.Data.ParameterDirection.Output;
+                    SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
+                    pcodigo.Direction = ParameterDirection.Output;
                     cmd.Parameters.Add(pcodigo);
 
-                    SqlParameter pnome = new SqlParameter("@nome", System.Data.SqlDbType.VarChar, 100);
+                    SqlParameter pnome = new SqlParameter("@nome", SqlDbType.VarChar, 100);
                     pnome.Value = produto.Nome;
                     cmd.Parameters.Add(pnome);
 
-                    SqlParameter ppreco = new SqlParameter("@preco", System.Data.SqlDbType.Decimal, 10);
+                    SqlParameter ppreco = new SqlParameter("@preco", SqlDbType.Decimal, 10);
                     ppreco.Value = produto.Preco;
                     cmd.Parameters.Add(ppreco);
 
-                    SqlParameter pestoque = new SqlParameter("@estoque", System.Data.SqlDbType.Int);
+                    SqlParameter pestoque = new SqlParameter("@estoque", SqlDbType.Int);
                     pnome.Value = produto.Estoque;
                     cmd.Parameters.Add(pestoque);
 
@@ -67,23 +67,23 @@ namespace Lojinha.DAL
                 {
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = cn;
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "altera_produto";
 
                     //Parametros da Stored Procedure
-                    SqlParameter pcodigo = new SqlParameter("@codigo", System.Data.SqlDbType.Int);
-                    pcodigo.Direction = System.Data.ParameterDirection.Output;
+                    SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
+                    pcodigo.Direction = ParameterDirection.Output;
                     cmd.Parameters.Add(pcodigo);
 
-                    SqlParameter pnome = new SqlParameter("@nome", System.Data.SqlDbType.VarChar, 100);
+                    SqlParameter pnome = new SqlParameter("@nome", SqlDbType.VarChar, 100);
                     pnome.Value = produto.Nome;
                     cmd.Parameters.Add(produto);
 
-                    SqlParameter ppreco = new SqlParameter("@preco", System.Data.SqlDbType.Decimal, 10);
+                    SqlParameter ppreco = new SqlParameter("@preco", SqlDbType.Decimal, 10);
                     ppreco.Value = produto.Preco;
                     cmd.Parameters.Add(ppreco);
 
-                    SqlParameter pestoque = new SqlParameter("@estoque", System.Data.SqlDbType.Int);
+                    SqlParameter pestoque = new SqlParameter("@estoque", SqlDbType.Int);
                     pestoque.Value = produto.Estoque;
                     cmd.Parameters.Add(pestoque);
 
@@ -115,12 +115,12 @@ namespace Lojinha.DAL
                 {
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = cn;
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "exclui_produto";
 
                     //Parametros da Stored Procedure
-                    SqlParameter pcodigo = new SqlParameter("@codigo", System.Data.SqlDbType.Int);
-                    pcodigo.Direction = System.Data.ParameterDirection.Output;
+                    SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
+                    pcodigo.Direction = ParameterDirection.Output;
                     cmd.Parameters.Add(pcodigo);
 
                     cn.Open();
@@ -150,11 +150,11 @@ namespace Lojinha.DAL
                 {
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = cn;
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "seleciona_produto";
 
                     //Parametros da Stored Procedure
-                    SqlParameter pfiltro = new SqlParameter("@filtro", System.Data.SqlDbType.VarChar, 100);
+                    SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar, 100);
                     pfiltro.Value = filtro;
                     cmd.Parameters.Add(pfiltro);
                     DataTable tabela = new DataTable();
