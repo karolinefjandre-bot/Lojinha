@@ -12,7 +12,8 @@ namespace Lojinha.DAL
         {
             get 
             {
-                return "server = Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=dblojinha;Integrated Security=True;Encrypt=True";
+                string conexao = "Data Source=(localdb)//MSSQLLocalDB;Initial Catalog=dblojinha;Integrated Security=True;Encrypt=True";
+                return conexao;
             }
         }
     }

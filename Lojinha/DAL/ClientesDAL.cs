@@ -48,7 +48,7 @@ namespace Lojinha.DAL
 			}
 			catch (SqlException ex)
 			{
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Message);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Message.ToString());
 			}
 			catch
 			{
@@ -96,7 +96,7 @@ namespace Lojinha.DAL
 			}
 			catch (SqlException ex)
 			{
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Message);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
 			}
 			catch
 			{
@@ -129,7 +129,7 @@ namespace Lojinha.DAL
 			}
 			catch (SqlException ex)
 			{
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Message);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
 			}
 			catch
 			{
@@ -163,7 +163,7 @@ namespace Lojinha.DAL
 			}
 			catch (SqlException ex)
 			{
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Message);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
 			}
 			catch
 			{
