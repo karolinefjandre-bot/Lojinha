@@ -107,7 +107,7 @@ namespace Lojinha.DAL
 				cn.Close();
 			}
 		}
-		public void Excluir(ClienteInformation cliente)
+		public void Excluir(int codigo)
 		{
 			//Conexão com o banco de dados
 			SqlConnection cn = new SqlConnection(Dados.StringConexao);
@@ -125,8 +125,6 @@ namespace Lojinha.DAL
 
 				cn.Open();
 				cmd.ExecuteNonQuery();
-
-				cliente.Codigo = (Int32)cmd.Parameters["@codigo"].Value;
 
 			}
 			catch (SqlException ex)
