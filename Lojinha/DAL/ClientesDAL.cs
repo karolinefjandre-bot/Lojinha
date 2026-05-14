@@ -72,7 +72,7 @@ namespace Lojinha.DAL
 
 				//Parametros da Stored Procedure
 				SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
-				pcodigo.Direction = ParameterDirection.Output;
+				pcodigo.Value = cliente.Codigo;
 				cmd.Parameters.Add(pcodigo);
 
 				SqlParameter pnome = new SqlParameter("@nome", SqlDbType.VarChar, 100);
@@ -90,17 +90,14 @@ namespace Lojinha.DAL
 				cn.Open();
 				cmd.ExecuteNonQuery();
 
-				cliente.Codigo = (Int32)cmd.Parameters["@codigo"].Value;
-
-
 			}
 			catch (SqlException ex)
 			{
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Message);
 			}
-			catch
+			catch (Exception ex)
 			{
-				throw new Exception("Erro desconhecido ao acessar o banco de dados.");
+				throw new Exception("Erro desconhecido ao acessar o banco de dados." + ex.Message);
 			}
 			finally
 			{
@@ -120,20 +117,19 @@ namespace Lojinha.DAL
 
 				//Parametros da Stored Procedure
 				SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
-				pcodigo.Direction = ParameterDirection.Output;
+				pcodigo.Value = codigo;
 				cmd.Parameters.Add(pcodigo);
-
 				cn.Open();
 				cmd.ExecuteNonQuery();
 
 			}
 			catch (SqlException ex)
 			{
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Message);
 			}
-			catch
+			catch (Exception ex)
 			{
-				throw new Exception("Erro desconhecido ao acessar o banco de dados.");
+				throw new Exception("Erro inesperado ." + ex.Message);
 			}
 			finally
 			{

@@ -104,7 +104,6 @@
             // 
             // codigoTextBox
             // 
-            this.codigoTextBox.Enabled = false;
             this.codigoTextBox.Location = new System.Drawing.Point(88, 9);
             this.codigoTextBox.Name = "codigoTextBox";
             this.codigoTextBox.Size = new System.Drawing.Size(100, 20);
@@ -149,6 +148,7 @@
             this.alterarButton.TabIndex = 3;
             this.alterarButton.Text = "Alterar";
             this.alterarButton.UseVisualStyleBackColor = true;
+            this.alterarButton.Click += new System.EventHandler(this.alterarButton_Click);
             // 
             // excluirButton
             // 
@@ -158,6 +158,7 @@
             this.excluirButton.TabIndex = 4;
             this.excluirButton.Text = "Excluir";
             this.excluirButton.UseVisualStyleBackColor = true;
+            this.excluirButton.Click += new System.EventHandler(this.excluirButton_Click);
             // 
             // selecionarButton
             // 
