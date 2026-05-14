@@ -176,6 +176,10 @@ namespace Lojinha.DAL
                     cn.Close();
                 }
             }
-        
+
+        internal void Excluir(int codigo)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
