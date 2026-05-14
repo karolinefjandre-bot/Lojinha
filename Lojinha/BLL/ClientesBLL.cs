@@ -18,6 +18,7 @@ namespace Lojinha.BLL
             {
                 throw new Exception("O nome do cliente é obrigatório");
             }
+            cliente.Nome = cliente.Nome.Trim();
             //Email é sempre em letras minúsculas
             cliente.Email = cliente.Email.ToLower();
             //Se está tudo Ok, chama a rotina de inserção
@@ -32,12 +33,13 @@ namespace Lojinha.BLL
             {
                 throw new Exception("O nome do cliente é obrigatório");
             }
+            cliente.Nome = cliente.Nome.Trim();
             //Email é sempre em letras minúsculas
             cliente.Email = cliente.Email.ToLower();
             //Se está tudo Ok, chama a rotina de alteração
             ClientesDAL obj = new ClientesDAL();
             obj.Alterar(cliente);
-        }
+        }   
 
         public void Excluir(int codigo)
         {

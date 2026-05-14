@@ -12,9 +12,10 @@ namespace Lojinha.DAL
         {
             get 
             {
-                string conexao = "Data Source=(localdb)//MSSQLLocalDB;Initial Catalog=dblojinha;Integrated Security=True;Encrypt=True";
+                // Fixed connection string: use backslash for LocalDB instance name
+                string conexao = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=dblojinha;Integrated Security=True;Encrypt=False";
                 return conexao;
-            }
+            }       
         }
     }
 }
