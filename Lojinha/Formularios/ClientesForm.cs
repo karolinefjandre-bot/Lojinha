@@ -80,5 +80,13 @@ namespace Lojinha.Formularios
                     MessageBox.Show("Erro exclusão: " + ex.Message.ToString());
                 }
         }
+
+        private void limparButton_Click(object sender, EventArgs e)
+        {
+            codigoTextBox.Clear();
+            nomeTextBox.Clear();
+            emailTextbox.Clear();
+            telefoneTextbox.Clear();
+        }
     }
 }
