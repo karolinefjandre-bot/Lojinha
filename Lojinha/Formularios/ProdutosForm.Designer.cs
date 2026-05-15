@@ -91,14 +91,14 @@
             // 
             this.nomeTextBox.Location = new System.Drawing.Point(107, 50);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nomeTextBox.Size = new System.Drawing.Size(194, 20);
             this.nomeTextBox.TabIndex = 5;
             // 
             // precoTextBox
             // 
             this.precoTextBox.Location = new System.Drawing.Point(107, 89);
             this.precoTextBox.Name = "precoTextBox";
-            this.precoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.precoTextBox.Size = new System.Drawing.Size(152, 20);
             this.precoTextBox.TabIndex = 6;
             // 
             // estoqueTextBox
@@ -110,7 +110,7 @@
             // 
             // inserirButton
             // 
-            this.inserirButton.Location = new System.Drawing.Point(16, 236);
+            this.inserirButton.Location = new System.Drawing.Point(12, 198);
             this.inserirButton.Name = "inserirButton";
             this.inserirButton.Size = new System.Drawing.Size(75, 23);
             this.inserirButton.TabIndex = 8;
@@ -120,7 +120,7 @@
             // 
             // alterarButton
             // 
-            this.alterarButton.Location = new System.Drawing.Point(97, 236);
+            this.alterarButton.Location = new System.Drawing.Point(93, 198);
             this.alterarButton.Name = "alterarButton";
             this.alterarButton.Size = new System.Drawing.Size(75, 23);
             this.alterarButton.TabIndex = 9;
@@ -130,7 +130,7 @@
             // 
             // excluirButton
             // 
-            this.excluirButton.Location = new System.Drawing.Point(178, 236);
+            this.excluirButton.Location = new System.Drawing.Point(174, 198);
             this.excluirButton.Name = "excluirButton";
             this.excluirButton.Size = new System.Drawing.Size(75, 23);
             this.excluirButton.TabIndex = 10;
@@ -140,7 +140,7 @@
             // 
             // selecionarButton
             // 
-            this.selecionarButton.Location = new System.Drawing.Point(259, 236);
+            this.selecionarButton.Location = new System.Drawing.Point(255, 198);
             this.selecionarButton.Name = "selecionarButton";
             this.selecionarButton.Size = new System.Drawing.Size(75, 23);
             this.selecionarButton.TabIndex = 11;
@@ -149,7 +149,7 @@
             // 
             // limparButton
             // 
-            this.limparButton.Location = new System.Drawing.Point(340, 236);
+            this.limparButton.Location = new System.Drawing.Point(336, 198);
             this.limparButton.Name = "limparButton";
             this.limparButton.Size = new System.Drawing.Size(75, 23);
             this.limparButton.TabIndex = 12;
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(549, 312);
             this.Controls.Add(this.limparButton);
             this.Controls.Add(this.selecionarButton);
             this.Controls.Add(this.excluirButton);

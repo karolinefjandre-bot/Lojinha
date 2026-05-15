@@ -16,5 +16,22 @@ namespace Lojinha.Formularios
         {
             InitializeComponent();
         }
+
+        private void cLientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientesForm cliente = new ClientesForm();
+            cliente.Show(this);
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProdutosForm produtos= new ProdutosForm();
+            produtos.Show(this);
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
