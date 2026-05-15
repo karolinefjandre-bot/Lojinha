@@ -36,7 +36,7 @@ namespace Lojinha.DAL
                     cmd.Parameters.Add(ppreco);
 
                     SqlParameter pestoque = new SqlParameter("@estoque", SqlDbType.Int);
-                    pnome.Value = produto.Estoque;
+                    pestoque.Value = produto.Estoque;
                     cmd.Parameters.Add(pestoque);
 
                     cn.Open();
