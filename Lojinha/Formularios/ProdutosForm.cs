@@ -52,7 +52,7 @@ namespace Lojinha.Formularios
                     produto.Preco = Convert.ToDecimal(precoTextBox.Text);
                     produto.Estoque = Convert.ToInt32(estoqueTextBox.Text);
 
-                   ProdutosBLL obj = new ProdutosBLL(); 
+                    ProdutosBLL obj = new ProdutosBLL();
                     obj.Alterar(produto);
                     MessageBox.Show("Produto alterado com sucesso");
                 }
@@ -60,8 +60,25 @@ namespace Lojinha.Formularios
                 {
                     MessageBox.Show("Erro: " + ex.Message);
                 }
+        }
 
-
+        private void excluirButton_Click(object sender, EventArgs e)
+        {
+            if (codigoTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("Um produto deve ser selecionado para exclusão");
+            }
+            else
+                try
+                {
+                    int codigo = Convert.ToInt32(codigoTextBox.Text);
+                    ProdutosBLL obj = new ProdutosBLL();
+                    obj.Excluir(codigo);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro exclusão: " + ex.Message.ToString());
+                }
         }
     }
     

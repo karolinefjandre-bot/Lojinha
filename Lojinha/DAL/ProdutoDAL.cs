@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lojinha.Formularios;
 
 namespace Lojinha.DAL
 {
@@ -72,12 +73,12 @@ namespace Lojinha.DAL
 
                     //Parametros da Stored Procedure
                     SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
-                    pcodigo.Direction = ParameterDirection.Output;
+                    pcodigo.Value = produto.Codigo;
                     cmd.Parameters.Add(pcodigo);
 
                     SqlParameter pnome = new SqlParameter("@nome", SqlDbType.VarChar, 100);
                     pnome.Value = produto.Nome;
-                    cmd.Parameters.Add(produto);
+                    cmd.Parameters.Add(pnome);
 
                     SqlParameter ppreco = new SqlParameter("@preco", SqlDbType.Decimal, 10);
                     ppreco.Value = produto.Preco;
@@ -120,7 +121,7 @@ namespace Lojinha.DAL
 
                     //Parametros da Stored Procedure
                     SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
-                    pcodigo.Direction = ParameterDirection.Output;
+                    pcodigo.Value = produto.Codigo;         
                     cmd.Parameters.Add(pcodigo);
 
                     cn.Open();

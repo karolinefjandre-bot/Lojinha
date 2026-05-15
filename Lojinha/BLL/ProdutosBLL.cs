@@ -38,12 +38,11 @@ namespace Lojinha.BLL
 
         public void Excluir(int codigo)
         {
-            if (codigo < 1)
-            {
-                throw new Exception("Selecione um produto antes de excluir");
-            }
+            if (codigo < 1) throw new Exception("Selecione um produto antes de excluir");
+            var produto = new ProdutoInformation { Codigo = codigo };
             ProdutoDAL obj = new ProdutoDAL();
-            obj.Excluir(codigo);
+            obj.Excluir(produto);
+
         }
         public DataTable Seleciona(string filtro)
         {
