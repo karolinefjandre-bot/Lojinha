@@ -1,6 +1,6 @@
 ﻿namespace Lojinha.Formularios
 {
-    partial class BuscaClienteForm
+    partial class BuscaProdutoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -34,22 +34,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.telefoneTextBox = new System.Windows.Forms.TextBox();
-            this.LimparButton = new System.Windows.Forms.Button();
+            this.precoTextBox = new System.Windows.Forms.TextBox();
+            this.estoqueTextBox = new System.Windows.Forms.TextBox();
+            this.ProdutoDataGridView = new System.Windows.Forms.DataGridView();
+            this.FiltrarButton = new System.Windows.Forms.Button();
+            this.filtroTextBox = new System.Windows.Forms.TextBox();
+            this.LimpaButton = new System.Windows.Forms.Button();
             this.IncluirButton = new System.Windows.Forms.Button();
             this.AlterarButton = new System.Windows.Forms.Button();
             this.ExcluirButton = new System.Windows.Forms.Button();
-            this.filtroTextBox = new System.Windows.Forms.TextBox();
-            this.FiltrarButton = new System.Windows.Forms.Button();
-            this.ClientesDataGridView = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProdutoDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 38);
+            this.label1.Location = new System.Drawing.Point(64, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 77);
+            this.label2.Location = new System.Drawing.Point(64, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
@@ -67,135 +67,133 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 111);
+            this.label3.Location = new System.Drawing.Point(64, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "E-mail:";
+            this.label3.Text = "Preço:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 145);
+            this.label4.Location = new System.Drawing.Point(64, 149);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Telefone:";
+            this.label4.Text = "Estoque:";
             // 
             // codigoTextBox
             // 
             this.codigoTextBox.Enabled = false;
-            this.codigoTextBox.Location = new System.Drawing.Point(126, 35);
+            this.codigoTextBox.Location = new System.Drawing.Point(142, 23);
             this.codigoTextBox.Name = "codigoTextBox";
-            this.codigoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codigoTextBox.Size = new System.Drawing.Size(120, 20);
             this.codigoTextBox.TabIndex = 4;
             // 
             // nomeTextBox
             // 
-            this.nomeTextBox.Location = new System.Drawing.Point(126, 74);
+            this.nomeTextBox.Location = new System.Drawing.Point(142, 60);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(207, 20);
+            this.nomeTextBox.Size = new System.Drawing.Size(233, 20);
             this.nomeTextBox.TabIndex = 5;
             // 
-            // emailTextBox
+            // precoTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(126, 108);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(207, 20);
-            this.emailTextBox.TabIndex = 6;
+            this.precoTextBox.Location = new System.Drawing.Point(142, 101);
+            this.precoTextBox.Name = "precoTextBox";
+            this.precoTextBox.Size = new System.Drawing.Size(233, 20);
+            this.precoTextBox.TabIndex = 6;
             // 
-            // telefoneTextBox
+            // estoqueTextBox
             // 
-            this.telefoneTextBox.Location = new System.Drawing.Point(126, 145);
-            this.telefoneTextBox.Name = "telefoneTextBox";
-            this.telefoneTextBox.Size = new System.Drawing.Size(207, 20);
-            this.telefoneTextBox.TabIndex = 7;
+            this.estoqueTextBox.Location = new System.Drawing.Point(142, 142);
+            this.estoqueTextBox.Name = "estoqueTextBox";
+            this.estoqueTextBox.Size = new System.Drawing.Size(233, 20);
+            this.estoqueTextBox.TabIndex = 7;
             // 
-            // LimparButton
+            // ProdutoDataGridView
             // 
-            this.LimparButton.Location = new System.Drawing.Point(66, 185);
-            this.LimparButton.Name = "LimparButton";
-            this.LimparButton.Size = new System.Drawing.Size(75, 23);
-            this.LimparButton.TabIndex = 8;
-            this.LimparButton.Text = "Limpar";
-            this.LimparButton.UseVisualStyleBackColor = true;
+            this.ProdutoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProdutoDataGridView.Location = new System.Drawing.Point(53, 220);
+            this.ProdutoDataGridView.Name = "ProdutoDataGridView";
+            this.ProdutoDataGridView.Size = new System.Drawing.Size(308, 131);
+            this.ProdutoDataGridView.TabIndex = 8;
+            // 
+            // FiltrarButton
+            // 
+            this.FiltrarButton.Location = new System.Drawing.Point(394, 367);
+            this.FiltrarButton.Name = "FiltrarButton";
+            this.FiltrarButton.Size = new System.Drawing.Size(81, 23);
+            this.FiltrarButton.TabIndex = 9;
+            this.FiltrarButton.Text = "Filtrar";
+            this.FiltrarButton.UseVisualStyleBackColor = true;
+            // 
+            // filtroTextBox
+            // 
+            this.filtroTextBox.Location = new System.Drawing.Point(53, 369);
+            this.filtroTextBox.Name = "filtroTextBox";
+            this.filtroTextBox.Size = new System.Drawing.Size(308, 20);
+            this.filtroTextBox.TabIndex = 10;
+            // 
+            // LimpaButton
+            // 
+            this.LimpaButton.Location = new System.Drawing.Point(53, 182);
+            this.LimpaButton.Name = "LimpaButton";
+            this.LimpaButton.Size = new System.Drawing.Size(75, 23);
+            this.LimpaButton.TabIndex = 11;
+            this.LimpaButton.Text = "Limpar";
+            this.LimpaButton.UseVisualStyleBackColor = true;
             // 
             // IncluirButton
             // 
-            this.IncluirButton.Location = new System.Drawing.Point(163, 185);
+            this.IncluirButton.Location = new System.Drawing.Point(142, 181);
             this.IncluirButton.Name = "IncluirButton";
             this.IncluirButton.Size = new System.Drawing.Size(75, 23);
-            this.IncluirButton.TabIndex = 9;
+            this.IncluirButton.TabIndex = 12;
             this.IncluirButton.Text = "Incluir";
             this.IncluirButton.UseVisualStyleBackColor = true;
             // 
             // AlterarButton
             // 
-            this.AlterarButton.Location = new System.Drawing.Point(258, 185);
+            this.AlterarButton.Location = new System.Drawing.Point(235, 182);
             this.AlterarButton.Name = "AlterarButton";
             this.AlterarButton.Size = new System.Drawing.Size(75, 23);
-            this.AlterarButton.TabIndex = 10;
+            this.AlterarButton.TabIndex = 13;
             this.AlterarButton.Text = "Alterar";
             this.AlterarButton.UseVisualStyleBackColor = true;
             // 
             // ExcluirButton
             // 
-            this.ExcluirButton.Location = new System.Drawing.Point(349, 185);
+            this.ExcluirButton.Location = new System.Drawing.Point(332, 182);
             this.ExcluirButton.Name = "ExcluirButton";
             this.ExcluirButton.Size = new System.Drawing.Size(75, 23);
-            this.ExcluirButton.TabIndex = 11;
+            this.ExcluirButton.TabIndex = 14;
             this.ExcluirButton.Text = "Excluir";
             this.ExcluirButton.UseVisualStyleBackColor = true;
             // 
-            // filtroTextBox
-            // 
-            this.filtroTextBox.Location = new System.Drawing.Point(66, 396);
-            this.filtroTextBox.Name = "filtroTextBox";
-            this.filtroTextBox.Size = new System.Drawing.Size(358, 20);
-            this.filtroTextBox.TabIndex = 12;
-            // 
-            // FiltrarButton
-            // 
-            this.FiltrarButton.Location = new System.Drawing.Point(461, 394);
-            this.FiltrarButton.Name = "FiltrarButton";
-            this.FiltrarButton.Size = new System.Drawing.Size(75, 23);
-            this.FiltrarButton.TabIndex = 13;
-            this.FiltrarButton.Text = "Filtrar";
-            this.FiltrarButton.UseVisualStyleBackColor = true;
-            this.FiltrarButton.Click += new System.EventHandler(this.FiltrarButton_Click);
-            // 
-            // ClientesDataGridView
-            // 
-            this.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClientesDataGridView.Location = new System.Drawing.Point(66, 228);
-            this.ClientesDataGridView.Name = "ClientesDataGridView";
-            this.ClientesDataGridView.Size = new System.Drawing.Size(358, 150);
-            this.ClientesDataGridView.TabIndex = 14;
-            // 
-            // BuscaClienteForm
+            // BuscaProdutoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 450);
-            this.Controls.Add(this.ClientesDataGridView);
-            this.Controls.Add(this.FiltrarButton);
-            this.Controls.Add(this.filtroTextBox);
+            this.ClientSize = new System.Drawing.Size(510, 414);
             this.Controls.Add(this.ExcluirButton);
             this.Controls.Add(this.AlterarButton);
             this.Controls.Add(this.IncluirButton);
-            this.Controls.Add(this.LimparButton);
-            this.Controls.Add(this.telefoneTextBox);
-            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.LimpaButton);
+            this.Controls.Add(this.filtroTextBox);
+            this.Controls.Add(this.FiltrarButton);
+            this.Controls.Add(this.ProdutoDataGridView);
+            this.Controls.Add(this.estoqueTextBox);
+            this.Controls.Add(this.precoTextBox);
             this.Controls.Add(this.nomeTextBox);
             this.Controls.Add(this.codigoTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "BuscaClienteForm";
-            this.Text = "BuscaClienteForm";
-            this.Load += new System.EventHandler(this.BuscaClienteForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).EndInit();
+            this.Name = "BuscaProdutoForm";
+            this.Text = "BuscaProduto";
+            ((System.ComponentModel.ISupportInitialize)(this.ProdutoDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,14 +207,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox codigoTextBox;
         private System.Windows.Forms.TextBox nomeTextBox;
-        private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox telefoneTextBox;
-        private System.Windows.Forms.Button LimparButton;
+        private System.Windows.Forms.TextBox precoTextBox;
+        private System.Windows.Forms.TextBox estoqueTextBox;
+        private System.Windows.Forms.DataGridView ProdutoDataGridView;
+        private System.Windows.Forms.Button FiltrarButton;
+        private System.Windows.Forms.TextBox filtroTextBox;
+        private System.Windows.Forms.Button LimpaButton;
         private System.Windows.Forms.Button IncluirButton;
         private System.Windows.Forms.Button AlterarButton;
         private System.Windows.Forms.Button ExcluirButton;
-        private System.Windows.Forms.TextBox filtroTextBox;
-        private System.Windows.Forms.Button FiltrarButton;
-        private System.Windows.Forms.DataGridView ClientesDataGridView;
     }
 }
