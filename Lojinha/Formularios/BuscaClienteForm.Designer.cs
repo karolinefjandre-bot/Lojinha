@@ -84,7 +84,6 @@
             // 
             // codigoTextBox
             // 
-            this.codigoTextBox.Enabled = false;
             this.codigoTextBox.Location = new System.Drawing.Point(126, 35);
             this.codigoTextBox.Name = "codigoTextBox";
             this.codigoTextBox.Size = new System.Drawing.Size(100, 20);
@@ -119,6 +118,7 @@
             this.LimparButton.TabIndex = 8;
             this.LimparButton.Text = "Limpar";
             this.LimparButton.UseVisualStyleBackColor = true;
+            this.LimparButton.Click += new System.EventHandler(this.LimparButton_Click);
             // 
             // IncluirButton
             // 
@@ -128,6 +128,7 @@
             this.IncluirButton.TabIndex = 9;
             this.IncluirButton.Text = "Incluir";
             this.IncluirButton.UseVisualStyleBackColor = true;
+            this.IncluirButton.Click += new System.EventHandler(this.IncluirButton_Click);
             // 
             // AlterarButton
             // 
@@ -137,6 +138,7 @@
             this.AlterarButton.TabIndex = 10;
             this.AlterarButton.Text = "Alterar";
             this.AlterarButton.UseVisualStyleBackColor = true;
+            this.AlterarButton.Click += new System.EventHandler(this.AlterarButton_Click);
             // 
             // ExcluirButton
             // 
@@ -146,6 +148,7 @@
             this.ExcluirButton.TabIndex = 11;
             this.ExcluirButton.Text = "Excluir";
             this.ExcluirButton.UseVisualStyleBackColor = true;
+            this.ExcluirButton.Click += new System.EventHandler(this.ExcluirButton_Click);
             // 
             // filtroTextBox
             // 

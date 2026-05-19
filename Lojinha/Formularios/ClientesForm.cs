@@ -74,11 +74,14 @@ namespace Lojinha.Formularios
                     int codigo = Convert.ToInt32(codigoTextBox.Text);
                     ClientesBLL obj = new ClientesBLL();
                     obj.Excluir(codigo);
+
+                    MessageBox.Show("Produto excluído com sucesso");
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro exclusão: " + ex.Message.ToString());
                 }
+            
         }
 
         private void limparButton_Click(object sender, EventArgs e)

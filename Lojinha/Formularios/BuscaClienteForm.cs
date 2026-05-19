@@ -1,4 +1,5 @@
 ﻿using Lojinha.BLL;
+using Lojinha.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +69,76 @@ namespace Lojinha.Formularios
                 emailTextBox.Text = "";
                 telefoneTextBox.Text = "";
             }
+        }
+
+        private void LimparButton_Click(object sender, EventArgs e)
+        {
+            codigoTextBox.Clear();
+            nomeTextBox.Clear();
+            emailTextBox.Clear();
+            telefoneTextBox.Clear();
+        }
+
+        private void IncluirButton_Click(object sender, EventArgs e)
+        {
+            ClienteInformation cliente = new ClienteInformation();
+            cliente.Nome = nomeTextBox.Text;
+            cliente.Email = emailTextBox.Text;
+            cliente.Telefone = telefoneTextBox.Text;
+
+            ClientesBLL obj = new ClientesBLL();
+            obj.Incluir(cliente);
+            MessageBox.Show("O cliente foi incluido com sucesso");
+            codigoTextBox.Text = Convert.ToString(cliente.Codigo);
+        }
+
+        private void AlterarButton_Click(object sender, EventArgs e)
+        {
+
+            if (codigoTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("Um cliente deve ser selecionado para alteração");
+                return;
+            }
+            else
+                try
+                {
+                    ClienteInformation cliente = new ClienteInformation();
+                    cliente.Codigo = int.Parse(codigoTextBox.Text);
+                    cliente.Nome = nomeTextBox.Text;
+                    cliente.Email = emailTextBox.Text;
+                    cliente.Telefone = telefoneTextBox.Text;
+
+                    ClientesBLL obj = new ClientesBLL();
+                    obj.Alterar(cliente);
+                    MessageBox.Show("Cliente alterado com sucesso");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+
+        }
+
+        private void ExcluirButton_Click(object sender, EventArgs e)
+        {
+            if(codigoTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("Um cliente deve ser selecionado para exclusão");
+            }
+            else
+                try
+                {
+                    int codigo = Convert.ToInt32(codigoTextBox.Text);
+                    ClientesBLL obj = new ClientesBLL();
+                    obj.Excluir(codigo);
+
+                    MessageBox.Show("Produto excluído com sucesso");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro exclusão: " + ex.Message.ToString());
+                }
         }
     }
 }
