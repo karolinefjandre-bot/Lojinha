@@ -17,7 +17,7 @@ namespace Lojinha
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BuscaClienteForm()); 
+            Application.Run(new PrincipalForm()); 
         }
     }
 }

@@ -169,7 +169,7 @@
             this.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientesDataGridView.Location = new System.Drawing.Point(66, 228);
             this.ClientesDataGridView.Name = "ClientesDataGridView";
-            this.ClientesDataGridView.Size = new System.Drawing.Size(358, 150);
+            this.ClientesDataGridView.Size = new System.Drawing.Size(470, 150);
             this.ClientesDataGridView.TabIndex = 14;
             // 
             // BuscaClienteForm

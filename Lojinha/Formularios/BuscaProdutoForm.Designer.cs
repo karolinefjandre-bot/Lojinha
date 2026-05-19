@@ -116,7 +116,7 @@
             this.ProdutoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProdutoDataGridView.Location = new System.Drawing.Point(53, 220);
             this.ProdutoDataGridView.Name = "ProdutoDataGridView";
-            this.ProdutoDataGridView.Size = new System.Drawing.Size(308, 131);
+            this.ProdutoDataGridView.Size = new System.Drawing.Size(422, 131);
             this.ProdutoDataGridView.TabIndex = 8;
             // 
             // FiltrarButton
@@ -127,6 +127,7 @@
             this.FiltrarButton.TabIndex = 9;
             this.FiltrarButton.Text = "Filtrar";
             this.FiltrarButton.UseVisualStyleBackColor = true;
+            this.FiltrarButton.Click += new System.EventHandler(this.FiltrarButton_Click);
             // 
             // filtroTextBox
             // 
@@ -193,6 +194,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BuscaProdutoForm";
             this.Text = "BuscaProduto";
+            this.Load += new System.EventHandler(this.BuscaProdutoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProdutoDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -40,5 +40,34 @@ namespace Lojinha.Formularios
                 estoqueTextBox.Text = "";
             }
         }
+
+        private void BuscaProdutoForm_Load(object sender, EventArgs e)
+        {
+            AtualizaGrid();
+            nomeTextBox.Focus();
+        }
+
+        private void FiltrarButton_Click(object sender, EventArgs e)
+        {
+            //Comunicação com a camada BLL
+            ProdutosBLL obj = new ProdutosBLL();
+            ProdutoDataGridView.DataSource = obj.Seleciona(filtroTextBox.Text);
+
+            //Atualiza os objetos TextBox
+            try
+            {
+                codigoTextBox.Text = ProdutoDataGridView[0, ProdutoDataGridView.CurrentRow.Index].Value.ToString();
+                nomeTextBox.Text = ProdutoDataGridView[1, ProdutoDataGridView.CurrentRow.Index].Value.ToString();
+                precoTextBox.Text = ProdutoDataGridView[2, ProdutoDataGridView.CurrentRow.Index].Value.ToString();
+                estoqueTextBox.Text = ProdutoDataGridView[3, ProdutoDataGridView.CurrentRow.Index].Value.ToString();
+            }
+            catch (Exception)
+            {
+                codigoTextBox.Text = "";
+                nomeTextBox.Text = "";
+                precoTextBox.Text = "";
+                estoqueTextBox.Text = "";
+            }
+        }
     }
 }
