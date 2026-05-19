@@ -84,7 +84,6 @@
             // 
             // codigoTextBox
             // 
-            this.codigoTextBox.Enabled = false;
             this.codigoTextBox.Location = new System.Drawing.Point(142, 23);
             this.codigoTextBox.Name = "codigoTextBox";
             this.codigoTextBox.Size = new System.Drawing.Size(120, 20);
@@ -144,6 +143,7 @@
             this.LimpaButton.TabIndex = 11;
             this.LimpaButton.Text = "Limpar";
             this.LimpaButton.UseVisualStyleBackColor = true;
+            this.LimpaButton.Click += new System.EventHandler(this.LimpaButton_Click);
             // 
             // IncluirButton
             // 
@@ -153,6 +153,7 @@
             this.IncluirButton.TabIndex = 12;
             this.IncluirButton.Text = "Incluir";
             this.IncluirButton.UseVisualStyleBackColor = true;
+            this.IncluirButton.Click += new System.EventHandler(this.IncluirButton_Click);
             // 
             // AlterarButton
             // 
@@ -162,6 +163,7 @@
             this.AlterarButton.TabIndex = 13;
             this.AlterarButton.Text = "Alterar";
             this.AlterarButton.UseVisualStyleBackColor = true;
+            this.AlterarButton.Click += new System.EventHandler(this.AlterarButton_Click);
             // 
             // ExcluirButton
             // 
@@ -171,6 +173,7 @@
             this.ExcluirButton.TabIndex = 14;
             this.ExcluirButton.Text = "Excluir";
             this.ExcluirButton.UseVisualStyleBackColor = true;
+            this.ExcluirButton.Click += new System.EventHandler(this.ExcluirButton_Click);
             // 
             // BuscaProdutoForm
             // 
